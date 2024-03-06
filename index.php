@@ -1,31 +1,5 @@
 <?php
-
-
-// inizializzo una nuova classe production che gestisce titolo lingua e voto di prodotti multimediali
-class Production
-{
-  public $title;
-  public $lang;
-  public $vote;
-
-  function __construct(
-    string $title,
-    string $lang,
-    int $vote,
-  ) {
-    $this->title = $title;
-    $this->lang = $lang;
-    $this->vote = $vote;
-  }
-};
-
-// creo un array produzioni contenente istanze del genere production
-$productions = [
-  new Production('Il signore degli anelli', 'en', 9),
-  new Production('Harry Potter', 'en', 8),
-  new Production('One Piece', 'ja', 9),
-]
-
+require_once __DIR__ . '/db/data.php'
 
 ?>
 
