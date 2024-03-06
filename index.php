@@ -21,6 +21,8 @@ require_once __DIR__ . '/db/data.php'
       <li><strong>Titolo:</strong> <?= $production->title ?> </li>
       <li><strong>Lingua:</strong> <?= $production->lang ?> </li>
       <li><strong>Voto:</strong> <?= $production->vote ?> </li>
+      <li><strong>Genere:</strong> <?= $production->genre->name ?> </li>
+      <li><strong>Descrizione:</strong> <?= $production->genre->desc ?> </li>
 
 
     </ul>
