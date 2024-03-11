@@ -24,6 +24,16 @@ require_once __DIR__ . '/db/data.php'
       <li><strong>Genere:</strong> <?= $production->genre->name ?> </li>
       <li><strong>Descrizione:</strong> <?= $production->genre->desc ?> </li>
 
+      <?php if ($production instanceof Movie) : ?>
+        <li><strong>Profit:</strong><?= $production->profit ?></li>
+        <li><strong>Duration:</strong><?= $production->duration ?></li>
+      <?php endif ?>
+      <?php if ($production instanceof TVSerie) : ?>
+        <li><strong>Seasons:</strong><?= $production->seasons ?></li>
+      <?php endif ?>
+
+
+
 
     </ul>
   <?php endforeach; ?>
